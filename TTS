@@ -8,14 +8,16 @@
         var speech = new SpeechSynthesisUtterance();
         speech.text = text;
         
-        // Set the voice to Jane
-        var voices = window.speechSynthesis.getVoices();
-        var janeVoice = voices.find(function(voice) {
-          return voice.name === 'Google UK English Female';
-        });
-        speech.voice = janeVoice;
+        // Wait for voices to be loaded
+        speech.addEventListener('voiceschanged', function() {
+          var voices = window.speechSynthesis.getVoices();
+          var janeVoice = voices.find(function(voice) {
+            return voice.name === 'Google UK English Female';
+          });
+          speech.voice = janeVoice;
         
-        window.speechSynthesis.speak(speech);
+          window.speechSynthesis.speak(speech);
+        });
       }
     </script>
   </head>
