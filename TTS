@@ -2,6 +2,12 @@
 <html>
   <head>
     <title>Github Website Example</title>
+    <style>
+      h1 {
+        text-align: right;
+        margin-right: 100px;
+      }
+    </style>
   </head>
   <body>
     <h1>Hi</h1>
