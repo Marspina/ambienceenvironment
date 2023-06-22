@@ -1,5 +1,5 @@
-<!DOCTYPE html>.
-<html>
+<!DOCTYPE html>
+<html><script src="TTS.js"></script>
   <head>
     <title>Text-to-Speech Example</title>
     <script src="TTS.js"></script>
