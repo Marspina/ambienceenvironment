@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html><script src="TTS.js"></script>
-  <head>
+<html>
+  <head><script src="TTS.js"></script>
     <title>Text-to-Speech Example</title>
     <script src="TTS.js"></script>
   </head>
